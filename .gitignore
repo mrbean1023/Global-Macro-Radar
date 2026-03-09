@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+__pycache__/
+*.pyc
+
+# Environment & secrets
+.env
+*.pem
+
+# Database
+data/*.db
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+frontend/dist/
+static/
+*.egg-info/
