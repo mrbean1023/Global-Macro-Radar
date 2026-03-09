@@ -851,9 +851,9 @@ function SearchPanel({ themes, colorMap }) {
             style={{flex:1,background:"rgba(255,255,255,0.05)",border:"1px solid rgba(255,255,255,0.12)",borderRadius:7,padding:"10px 14px",color:"white",fontSize:13,fontFamily:"'DM Mono',monospace",outline:"none"}}/>
           <select value={region} onChange={e=>setRegion(e.target.value)}
             style={{background:"rgba(255,255,255,0.05)",border:"1px solid rgba(255,255,255,0.12)",borderRadius:7,padding:"8px 12px",color:"white",fontSize:11,fontFamily:"'DM Mono',monospace",outline:"none",cursor:"pointer"}}>
-            <option value="">All Regions</option>
+            <option value="" style={{background:"#0f1520",color:"white"}}>All Regions</option>
             {["US","EU","UK","JP","CN","ASIA","ME","EM","LATAM"].map(r=>(
-              <option key={r} value={r}>{r}</option>
+              <option key={r} value={r} style={{background:"#0f1520",color:"white"}}>{r}</option>
             ))}
           </select>
           <button onClick={doSearch} disabled={loading||!query.trim()} style={{padding:"10px 18px",background:"rgba(123,97,255,0.2)",border:"1px solid rgba(123,97,255,0.45)",color:"#7B61FF",borderRadius:7,cursor:loading?"not-allowed":"pointer",fontSize:12,fontFamily:"'DM Mono',monospace",fontWeight:700,opacity:loading?0.5:1,whiteSpace:"nowrap"}}>
