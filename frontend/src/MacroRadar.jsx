@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
-const API = "http://localhost:8000";
+const API = import.meta.env.DEV ? "http://localhost:8000" : "";
 const THEME_COLORS = ["#FF4D4D","#FF8C00","#7B61FF","#00C9A7","#00A3FF","#F59E0B","#EC4899","#34D399"];
 
 const REGIONS_META = [
